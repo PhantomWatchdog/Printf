@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int index, jndex, count = 0;
+	int i, j, count = 0;
 	/* Declaration of an struct array with types and functions */
 	check_t f[] = {
 		{'c', print_c},
@@ -21,19 +21,19 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	/* Move in format */
-	for (index = 0; format && format[index]; index++)
+	for (i = 0; format && format[i]; i++)
 	{
-		if (format[index] == '%' && format[index + 1] != 'K' && format[index + 1] != '!')
+		if (format[i] == '%' && format[i + 1] != 'K' && format[i + 1] != '!')
 		{
-			index++;
+			i++;
 			/* Move in specifiers array */
-			for (jndex = 0; f[jndex].letter; jndex++)
+			for (j = 0; f[j].letter; j++)
 			{
 				/* Check specifier match */
-				if (f[jndex].letter == format[index])
+				if (f[j].letter == format[i])
 				{
 					/* Cast associated function */
-					count += f[jndex].f(args);
+					count += f[j].f(args);
 					break;
 				}
 			}
@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			/* If arg's not specifier print it */
-			_putchar(format[index]);
+			_putchar(format[i]);
 			count++;
 		}
 	}
