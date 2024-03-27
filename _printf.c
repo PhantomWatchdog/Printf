@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 	/* Move in format */
 	for (index = 0; format && format[index]; index++)
 	{
-		if (format[index] == '%')
+		if (format[index] == '%' && format[index + 1] != 'K' && format[index + 1] != '!')
 		{
 			index++;
 			/* Move in specifiers array */
