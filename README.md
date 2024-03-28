@@ -126,3 +126,5 @@ that prepares students for careers in the tech industry using project-based
 peer learning. For more information, visit [this link](https://www.holbertonschool.com/).
 
 :traffic_light: :boom: :police_car: :roller_coaster: :skull:
+
+<[flochart](https://github.com/PhantomWatchdog/holbertonschool-printf/blob/main/Flowchart.png)>
