@@ -105,6 +105,9 @@ Output:
 ```
 %
 ```
+## License :lock:
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## Authors :black_nib:
 
@@ -121,3 +124,5 @@ This program was written as part of the curriculum for Holberton School.
 Holberton School is a campus-based full-stack software engineering program
 that prepares students for careers in the tech industry using project-based
 peer learning. For more information, visit [this link](https://www.holbertonschool.com/).
+
+:traffic_light: :boom: :police_car: :roller_coaster: :skull:
