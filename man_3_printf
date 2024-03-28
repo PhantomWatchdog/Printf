@@ -35,6 +35,22 @@ To print a character:
 .B _printf("%c", 'A');
 .RE
 
+.nf
+#include "main.h"
+
+int main(void)
+
+{
+
+	_printf("%c\n", 'H');
+
+}
+.fi
+
+.nf
+H
+.fi
+
 .B 's' (string):
 .in +2n
 To print a string:
@@ -43,6 +59,22 @@ To print a string:
 .RS
 .B _printf("%s", "Hello, World!");
 .RE
+
+.nf
+#include "main.h"
+
+int main(void)
+
+{
+
+        _printf("%s\n", "Hello world");
+
+}
+.fi
+
+.nf
+Hello world
+.fi
 
 .B '%' (percent):
 .in +2n
@@ -53,6 +85,22 @@ To print a percent sign:
 .B _printf("100%%");
 .RE
 .RE
+
+.nf
+#include "main.h"
+
+int main(void)
+
+{
+
+        _printf("%%\n");
+
+}
+.fi
+
+.nf
+%
+.fi
 
 .SH BUGS
 No bugs for now.
