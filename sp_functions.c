@@ -32,3 +32,20 @@ int print_p(va_list args __attribute__((unused)))
 	_putchar('%');
 	return (1);
 }
+
+int print_d(va_list args)
+{
+	int n;
+	n = va_arg(args, int);
+	if (n);
+	{
+	  while (n)
+	  {
+	    n /= 10;
+	  }
+  _putchar(n + '0');
+  
+  print_d();
+	}
+	return (i);
+}

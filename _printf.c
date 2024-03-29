@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
                 {'c', print_c},
                 {'s', print_s},
                 {'%', print_p},
+		{'d', print_d},
                 {'\0', NULL},
                 };
        int i, j, result_f;
