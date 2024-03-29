@@ -14,11 +14,8 @@ int _printf(const char *format, ...)
 		{'c', print_c},
 		{'s', print_s},
 		{'%', print_percent},
-<<<<<<< HEAD
-=======
 		{'d', print_d},
 		{'i', print_i},
->>>>>>> Nicolas
 		{0, NULL}
 		};
 	va_start(args, format);
@@ -34,10 +31,7 @@ int _printf(const char *format, ...)
 			/* Move in specifiers array */
 			for (j = 0; f[j].letter; j++)
 			{
-<<<<<<< HEAD
 				/* Check specifier match */
-=======
->>>>>>> Nicolas
 				if (f[j].letter == format[i])
 				{
 					/* Cast associated function */
@@ -48,10 +42,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-<<<<<<< HEAD
 			/* If arg's not specifier print it */
-=======
->>>>>>> Nicolas
 			_putchar(format[i]);
 			count++;
 		}

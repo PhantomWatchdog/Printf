@@ -48,8 +48,6 @@ int print_percent(void)
 	_putchar(37);
 	return (1);
 }
-<<<<<<< HEAD
-=======
 
 /**
 * print_d - Print the decimal numbers.
@@ -108,4 +106,3 @@ int print_i(va_list args)
 {
 	return (print_d(args));
 }
->>>>>>> Nicolas
