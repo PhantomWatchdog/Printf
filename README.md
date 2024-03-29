@@ -115,7 +115,7 @@ Output:
 %
 ```
 #### d, i
-The `int` argument is converted to signed decimal notation.
+The `int` argument is converted to (signed or not) decimal notation.
 
 Example `main.c`:
 ```
@@ -125,14 +125,14 @@ int main(void)
 
 	_printf("Length:[%d, %i]\n", len, len);
 	_printf("%d\n", 7);
-	_printf("Negative:[%d]\n", -762534);
+	_printf("Negative:[%d]\n", -76);
 }
 ```
 Output:
 ```
 Length:[39, 39]
 7
--762534
+Negative: [-76]
 ```
 ## License :lock:
 
