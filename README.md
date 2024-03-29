@@ -127,4 +127,4 @@ peer learning. For more information, visit [this link](https://www.holbertonscho
 
 :traffic_light: :boom: :police_car: :roller_coaster: :skull:
 
-<[flochart](https://github.com/PhantomWatchdog/holbertonschool-printf/blob/main/Flowchart.png)>
+![Flowchart](https://github.com/PhantomWatchdog/holbertonschool-printf/blob/main/Flowchart.png)
