@@ -51,6 +51,9 @@ If an output error is encountered, the function returns `-1`.
 | ------------- |:-------------:|
 | `%c`          | Prints a single character     |
 | `%s`          | Prints a string of characters |
+| `%%`		| Prints a percent sign 	|
+| `%d`		| Prints a decimal number	|
+| `%i`		| Prints a integer		|
 
 #### c
 The `int` argument is converted to an `char`.
