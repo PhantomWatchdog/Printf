@@ -35,17 +35,19 @@ int print_p(va_list args __attribute__((unused)))
 
 int print_d(va_list args)
 {
-	int n;
+	int n, i, j;
+	char *str;
 	n = va_arg(args, int);
-	if (n);
+	str = "";
+
+	for (i = 0; *str != n + '0'; i++)
 	{
-	  while (n)
-	  {
-	    n /= 10;
-	  }
-  _putchar(n + '0');
-  
-  print_d();
+		str += (n % 10) + '0';
 	}
-	return (i);
+	for (j = 0; str[j] != '\0'; j++)
+	{
+		_putchar(str[j]);
+	}
+	return (j);
+	
 }
