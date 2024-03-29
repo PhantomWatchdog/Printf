@@ -9,7 +9,6 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int i, j, count = 0;
-	/* Declaration of an struct array with types and functions */
 	check_t f[] = {
 		{'c', print_c},
 		{'s', print_s},
@@ -22,7 +21,6 @@ int _printf(const char *format, ...)
 	/* Check if format is valid */
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-	/* Move in format */
 	for (i = 0; format && format[i]; i++)
 	{
 		if (format[i] == '%' && format[i + 1] != 'K' && format[i + 1] != '!')
