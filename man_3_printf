@@ -17,7 +17,7 @@ Supported specifiers :
 	'%' (percent)
 
 .SH RETURN
-For a successful treatement, the _printf() function returns the number of characters printed 
+For a successful treatement, the _printf() function returns the number of characters printed
 (without the null byte at end).
 
 If the function meet an error, it returns -1.
