@@ -62,7 +62,7 @@ Example `main.c`:
 ```
 int main(void)
 {
-    _printf("%c\n", 48);
+	_printf("%c\n", 48);
 }
 ```
 Output:
@@ -74,7 +74,7 @@ Example `main.c`:
 ```
 int main(void)
 {
-    _printf("%c\n", 'H');
+	_printf("%c\n", 'H');
 }
 ```
 Output:
@@ -91,7 +91,7 @@ Example `main.c`:
 ```
 int main(void)
 {
-    _printf("hello %s\n", "world", 1, 2, 3, 4);
+	_printf("hello %s\n", "world", 1, 2, 3, 4);
 }
 ```
 Output:
@@ -107,12 +107,32 @@ Example:
 ```
 int main(void)
 {
-    _printf("%%\n");
+	_printf("%%\n");
 }
 ```
 Output:
 ```
 %
+```
+#### d, i
+The `int` argument is converted to signed decimal notation.
+
+Example `main.c`:
+```
+int main(void)
+{
+	len = _printf("Let's try to printf a simple sentence.\n");
+
+	_printf("Length:[%d, %i]\n", len, len);
+	_printf("%d\n", 7);
+	_printf("Negative:[%d]\n", -762534);
+}
+```
+Output:
+```
+Length:[39, 39]
+7
+-762534
 ```
 ## License :lock:
 
