@@ -46,6 +46,12 @@ Prototype: `int _printf(const char *format, ...);`
 If successful result, `_printf` returns the number of characters printed.
 If an output error is encountered, the function returns `-1`.
 
+## Conversion specifiers
+| Specifiers  | Description |
+| ------------- |:-------------:|
+| `%c`          | Prints a single character     |
+| `%s`          | Prints a string of characters |
+
 #### c
 The `int` argument is converted to an `char`.
 
